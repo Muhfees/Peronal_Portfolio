@@ -1,6 +1,6 @@
-# 🚀 Aarab Nishchal — Developer Portfolio & Dynamic Blog
+# 🚀 Muhfeesur Rahman — Developer Portfolio & Dynamic Blog
 
-Welcome to the official source code for **Aarab Nishchal's Developer Portfolio & Dynamic Blog**. Built with Next.js 16, React 19, Tailwind CSS v4, Motion, GSAP, and a Notion-powered CMS, this portfolio is designed to be sleek, fast, highly customizable, and expressive.
+Welcome to the official source code for **Muhfeesur Rahman's Developer Portfolio & Dynamic Blog**. Built with Next.js 16, React 19, Tailwind CSS v4, Motion, GSAP, and a Notion-powered CMS, this portfolio is designed to be sleek, fast, highly customizable, and expressive.
 
 Whether you're looking for design inspiration, interested in how the Notion CMS integration works under the hood, or want to clone and adapt this template for your own developer journey, this README has everything you need!
 
