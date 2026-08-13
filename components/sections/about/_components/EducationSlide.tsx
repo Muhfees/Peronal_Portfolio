@@ -20,16 +20,23 @@ export const EducationSlide = () => {
         {profile.education.uni}
       </h3>
       <p className="font-mono text-xs sm:text-sm text-neutral-300 font-medium">
-        {profile.education.degree} in {profile.education.major}
+        {profile.education.degree}
+        {profile.education.major ? ` in ${profile.education.major}` : ""}
       </p>
       <div className="flex items-center gap-3 font-mono text-xs text-neutral-400 pt-1">
         <span className="px-2 py-0.5 rounded-md bg-neutral-900 border border-neutral-800 text-accent">
           Batch: {profile.education.batch}
         </span>
-        <span>•</span>
-        <span>
-          {profile.education.location.city}, {profile.education.location.state}
-        </span>
+        {(profile.education.location.city || profile.education.location.district) && (
+          <>
+            <span>•</span>
+            <span>
+              {[profile.education.location.city, profile.education.location.district]
+                .filter(Boolean)
+                .join(", ")}
+            </span>
+          </>
+        )}
       </div>
     </motion.div>
   );

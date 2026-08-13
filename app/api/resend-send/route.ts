@@ -15,9 +15,12 @@ const ALLOWED_ORIGINS = [
   "https://www.aarab.me",
 ];
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: NextRequest) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    return NextResponse.json({ error: "Resend API key not configured" }, { status: 500 });
+  }
+  const resend = new Resend(apiKey);
   const origin =
     request.headers.get("origin") || request.headers.get("referer") || "";
   const isAllowed = ALLOWED_ORIGINS.some((allowed) =>

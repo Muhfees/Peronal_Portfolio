@@ -65,8 +65,8 @@ export const profile: Profile = {
     major: "",
     batch: "2023 - 2027",
     location: {
-      city: "",
-      district: "",
+      city: "Vavuniya",
+      district: "Vavuniya",
     },
   },
 
