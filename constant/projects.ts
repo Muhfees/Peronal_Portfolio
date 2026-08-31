@@ -25,7 +25,7 @@ export const selected_works: Project[] = [
       "Neon",
     ],
     links: {
-      live: "https://worklink.lk",
+      live: "https://work-link-website.vercel.app/",
       github: "https://github.com/Muhfees/WorkLink-Website",
     },
   },
